@@ -28,7 +28,7 @@ export default function BottomNav() {
     {
       href: '/cv-scanner',
       icon: Camera,
-      label: 'Foto Usaha',
+      label: 'Scan',
       active: pathname === '/cv-scanner',
       color: '#2aa2bc',
       neon: '#2aa2bc'
