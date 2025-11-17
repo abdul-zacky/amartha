@@ -33,6 +33,7 @@ body {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 70px; /* Add space for bottom navbar */
 }
 
 /* On desktop (viewport wider than 768px), limit to mobile width */
@@ -44,7 +45,8 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
   }
 
@@ -68,7 +70,8 @@ body {
     box-shadow: 0 0 80px rgba(61, 40, 131, 0.4), 0 0 40px rgba(42, 162, 188, 0.3);
     position: relative;
     z-index: 1;
-    overflow: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   /* Blurred reflection effect on the sides */
