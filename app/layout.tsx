@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="pb-20">
+        <div className="mobile-container">
           {children}
         </div>
         <BottomNav />

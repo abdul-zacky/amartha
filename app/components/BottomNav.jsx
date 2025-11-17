@@ -44,7 +44,7 @@ export default function BottomNav() {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-2xl z-50">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-2xl z-50 mobile-nav">
       <style jsx>{`
         @keyframes pulseGlow {
           0%, 100% { opacity: 0.3; }
@@ -56,7 +56,7 @@ export default function BottomNav() {
         }
       `}</style>
 
-      <div className="flex justify-around items-center max-w-md mx-auto px-4 py-2 relative">
+      <div className="flex justify-around items-center px-4 py-2 relative">
         {navItems.map((item) => {
           const Icon = item.icon;
           const buttonColor = item.active ? item.color : (item.defaultColor || '#6b7280');
